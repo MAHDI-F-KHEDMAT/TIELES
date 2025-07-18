@@ -38,6 +38,10 @@ CONFIG_URLS: List[str] = [
     "https://raw.githubusercontent.com/MAHDI-F-KHEDMAT/KHANEVADEGI/refs/heads/main/data/khanevadeh_base64.txt",
     "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/vless.html",
     "https://raw.githubusercontent.com/Pasimand/v2ray-config-agg/refs/heads/main/config.txt",
+    "https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector_Py/refs/heads/main/sub/Mix/mix.txt",
+    "https://raw.githubusercontent.com/dream4network/telegram-configs-collector/refs/heads/main/protocols/vless",
+    "https://raw.githubusercontent.com/V2RayRoot/V2RayConfig/refs/heads/main/Config/vless.txt"
+    
 ]
 
 # نام فایل خروجی برای ذخیره کانفیگ‌های نهایی.
