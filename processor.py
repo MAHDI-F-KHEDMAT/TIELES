@@ -21,9 +21,8 @@ PRINT_LOCK = threading.Lock() # برای جلوگیری از تداخل در چ�
 OUTPUT_DIR = "data"
 
 # لیست URLهای سابسکریپشن که کانفیگ‌ها از آن‌ها جمع‌آوری می‌شوند.
-CONFIG_URLS: List[str] =
- [
-"https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/xray/base64/mix",
+CONFIG_URLS: List[str] = [
+    "https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/xray/base64/mix",
 "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/refs/heads/main/main/vless",
 "https://raw.githubusercontent.com/T3stAcc/V2Ray/refs/heads/main/Splitted-By-Protocol/vless.txt",
 "https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/Splitted-By-Protocol/vless.txt",
@@ -48,6 +47,7 @@ CONFIG_URLS: List[str] =
 "https://raw.githubusercontent.com/giromo/Xrey-collector/refs/heads/main/All_Configs_Sub.txt",
 "https://raw.githubusercontent.com/dream4network/telegram-configs-collector/refs/heads/main/splitted/mixed",
 "https://raw.githubusercontent.com/Matin-RK0/ConfigCollector/refs/heads/main/subscription.txt"
+
 ]
 
 # نام فایل خروجی برای ذخیره کانفیگ‌های نهایی.
