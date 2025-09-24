@@ -21,27 +21,33 @@ PRINT_LOCK = threading.Lock() # برای جلوگیری از تداخل در چ�
 OUTPUT_DIR = "data"
 
 # لیست URLهای سابسکریپشن که کانفیگ‌ها از آن‌ها جمع‌آوری می‌شوند.
-CONFIG_URLS: List[str] = [
-    "https://raw.githubusercontent.com/PlanAsli/configs-collector-v2ray/refs/heads/main/sub/protocols/vless.txt",
-    "https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/xray/base64/mix",
-    "https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/refs/heads/main/Protocols/vless.txt",
-    "https://raw.githubusercontent.com/Argh94/V2RayAutoConfig/refs/heads/main/configs/Vless.txt",
-    "https://www.v2nodes.com/subscriptions/country/all/?key=F225BC16D80D287",
-    "https://raw.githubusercontent.com/Awmiroosen/awmirx-v2ray/refs/heads/main/blob/main/v2-sub.txt",
-    "https://raw.githubusercontent.com/gfpcom/free-proxy-list/refs/heads/main/list/vless.txt",
-    "https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/refs/heads/main/githubmirror/22.txt",
-    "https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/refs/heads/main/githubmirror/14.txt",
-    "https://raw.githubusercontent.com/MRT-project/v2ray-configs/refs/heads/main/AllConfigsSub.txt",
-    "https://raw.githubusercontent.com/Kolandone/v2raycollector/refs/heads/main/vless.txt",
-    "https://raw.githubusercontent.com/Leon406/SubCrawler/refs/heads/main/sub/share/vless",
-    "https://raw.githubusercontent.com/xyfqzy/free-nodes/refs/heads/main/nodes/vless.txt",
-    "https://raw.githubusercontent.com/MAHDI-F-KHEDMAT/KHANEVADEGI/refs/heads/main/data/khanevadeh_base64.txt",
-    "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/vless.html",
-    "https://raw.githubusercontent.com/Pasimand/v2ray-config-agg/refs/heads/main/config.txt",
-    "https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector_Py/refs/heads/main/sub/Mix/mix.txt",
-    "https://raw.githubusercontent.com/dream4network/telegram-configs-collector/refs/heads/main/protocols/vless",
-    "https://raw.githubusercontent.com/V2RayRoot/V2RayConfig/refs/heads/main/Config/vless.txt"
-    
+CONFIG_URLS: List[str] =
+ [
+"https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/xray/base64/mix",
+"https://raw.githubusercontent.com/iboxz/free-v2ray-collector/refs/heads/main/main/vless",
+"https://raw.githubusercontent.com/T3stAcc/V2Ray/refs/heads/main/Splitted-By-Protocol/vless.txt",
+"https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/Splitted-By-Protocol/vless.txt",
+"https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vless_configs.txt",
+"https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/V2RAY_SUB/refs/heads/main/v2ray_configs.txt",
+"https://raw.githubusercontent.com/mohamadfg-dev/telegram-v2ray-configs-collector/refs/heads/main/category/vless.txt",
+"https://raw.githubusercontent.com/V2RayRoot/V2RayConfig/refs/heads/main/Config/vless.txt",
+"https://raw.githubusercontent.com/dream4network/telegram-configs-collector/refs/heads/main/protocols/vless",
+"https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector_Py/refs/heads/main/sub/Mix/mix.txt",
+"https://raw.githubusercontent.com/Pasimand/v2ray-config-agg/refs/heads/main/config.txt",
+"https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/vless.html",
+"https://raw.githubusercontent.com/xyfqzy/free-nodes/refs/heads/main/nodes/vless.txt",
+"https://raw.githubusercontent.com/Leon406/SubCrawler/refs/heads/main/sub/share/vless",
+"https://raw.githubusercontent.com/Kolandone/v2raycollector/refs/heads/main/vless.txt",
+"https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/refs/heads/main/githubmirror/14.txt",
+"https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/refs/heads/main/githubmirror/22.txt",
+"https://raw.githubusercontent.com/Awmiroosen/awmirx-v2ray/refs/heads/main/blob/main/v2-sub.txt",
+"https://raw.githubusercontent.com/Argh94/V2RayAutoConfig/refs/heads/main/configs/Vless.txt",
+"https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/refs/heads/main/Protocols/vless.txt",
+"https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/xray/base64/mix", "https://raw.githubusercontent.com/RaitonRed/ConfigsHub/refs/heads/main/Splitted-By-Protocol/vless.txt",
+"https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/refs/heads/main/Protocols/vless.txt", "https://raw.githubusercontent.com/Argh94/V2RayAutoConfig/refs/heads/main/configs/Vless.txt", "https://raw.githubusercontent.com/Awmiroosen/awmirx-v2ray/refs/heads/main/blob/main/v2-sub.txt", "https://media.githubusercontent.com/media/gfpcom/free-proxy-list/refs/heads/main/list/vless.txt", "https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/refs/heads/main/githubmirror/22.txt", "https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/refs/heads/main/githubmirror/14.txt", "https://raw.githubusercontent.com/Kolandone/v2raycollector/refs/heads/main/vless.txt", "https://raw.githubusercontent.com/Leon406/SubCrawler/refs/heads/main/sub/share/vless", "https://raw.githubusercontent.com/xyfqzy/free-nodes/refs/heads/main/nodes/vless.txt", "https://raw.githubusercontent.com/MAHDI-F-KHEDMAT/KHANEVADEGI/refs/heads/main/data/khanevadeh_base64.txt", "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/vless.html", "https://raw.githubusercontent.com/Pasimand/v2ray-config-agg/refs/heads/main/config.txt", "https://raw.githubusercontent.com/crackbest/V2ray-Config/refs/heads/main/config.txt", "https://raw.githubusercontent.com/barry-far/V2ray-Config/refs/heads/main/Splitted-By-Protocol/vless.txt",
+"https://raw.githubusercontent.com/giromo/Xrey-collector/refs/heads/main/All_Configs_Sub.txt",
+"https://raw.githubusercontent.com/dream4network/telegram-configs-collector/refs/heads/main/splitted/mixed",
+"https://raw.githubusercontent.com/Matin-RK0/ConfigCollector/refs/heads/main/subscription.txt"
 ]
 
 # نام فایل خروجی برای ذخیره کانفیگ‌های نهایی.
