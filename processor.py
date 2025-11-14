@@ -22,7 +22,12 @@ OUTPUT_DIR = "data"
 
 # لیست URLهای سابسکریپشن که کانفیگ‌ها از آن‌ها جمع‌آوری می‌شوند.
 CONFIG_URLS: List[str] = [
-  "https://raw.githubusercontent.com/longlon/v2ray-config/refs/heads/main/All_Configs_Sub.txt",
+ "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/refs/heads/main/main/vless",
+"https://raw.githubusercontent.com/V2RayRoot/V2RayConfig/refs/heads/main/Config/vless.txt",
+"https://raw.githubusercontent.com/crackbest/V2ray-Config/refs/heads/main/config.txt",
+"https://raw.githubusercontent.com/RaitonRed/ConfigsHub/refs/heads/main/All_Configs_Sub.txt",
+"https://raw.githubusercontent.com/barry-far/V2ray-Config/refs/heads/main/All_Configs_Sub.txt",
+"https://raw.githubusercontent.com/longlon/v2ray-config/refs/heads/main/All_Configs_Sub.txt", "https://raw.githubusercontent.com/longlon/v2ray-config/refs/heads/main/All_Configs_Sub.txt",
     "https://raw.githubusercontent.com/itsyebekhe/PSG/main/subscriptions/xray/base64/mix",
 "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/refs/heads/main/main/vless",
 "https://raw.githubusercontent.com/T3stAcc/V2Ray/refs/heads/main/Splitted-By-Protocol/vless.txt",
